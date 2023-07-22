@@ -111,26 +111,27 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div style="position: relative;">
-                  <img class="d-block w-100" src="assets/images/img1.jpg" alt="Image 1">
-                  <!-- <a href="/register"><button type="submit" class="btn-primary" style="position: absolute; z-index:100">Register</button></a> -->
-                  <p id="but"><button id="registerBtn">Register</button></p>
+                  <img class="d-block w-100" src="assets/images/img1.jpg" alt="Image 1" height="600px" width="500px">
+                  <p id="but">
+                    <button id="registerBtn" onclick="openForm()">Register</button>
+                  </p>
                 </div>
                 <script>
-                  document.getElementById("registerBtn").addEventListener("click", function (event) {
-                    event.preventDefault();
+                  function openForm() {
                     var formUrl = 'https://github.com/shobhitjuglan/odacWebsite';
                     var newTab = window.open(formUrl, '_blank');
                     newTab.focus();
-                  });
+                  }
                 </script>
                 <style type="text/css">
                   #but {
                     position: absolute;
                     bottom: 0;
-                    left: 10%;
+                    left: 40%;
+                    /* Center the button horizontally */
                     transform: translateX(-50%);
                   }
-
+              
                   #but button {
                     padding: 8px 16px;
                     background-color: #007bff;
@@ -146,11 +147,12 @@
                   }
                 </style>
               </div>
+
               <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/img2.jpg" alt="Image 2">
+                <img class="d-block w-100" src="assets/images/img2.jpg" alt="Image 2" height="600px" width="500px">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/img3.jpg" alt="Image 3">
+                <img class="d-block w-100" src="assets/images/img3.jpg" alt="Image 3" height="600px" width="500px">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -171,108 +173,143 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
-          <div class="row">
-            <div class="col-lg-4">
-              <!-- <div class="card" style="align-items: center; justify-content:center"> -->
-              <!-- <div class="card-carousel"> -->
-              <div id="smallCarousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/img1.jpg" alt="Image 1">
+          <div class="float-container">
+            <div class="row">
+              <div class="col-lg-4">
+                <!-- <div class="card" style="align-items: center; justify-content:center"> -->
+                <!-- <div class="card-carousel"> -->
+                <div id="smallCarousel1" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block_w-1001" src="assets/images/img1.jpg" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block_w-1001" src="assets/images/img2.jpg" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block_w-1001" src="assets/images/img3.jpg" alt="Image 3">
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/img2.jpg" alt="Image 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/img3.jpg" alt="Image 3">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#smallCarousel1" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#smallCarousel1" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-              <!-- </div> -->
-              <!-- </div> -->
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">Some example text to fill the card body.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
+                  <a class="carousel-control-prev" href="#smallCarousel1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#smallCarousel1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <style type="text/css">
+                    .d-block_w-1001 {
+                      margin-top: 15px;
+                      margin-left: 15px;
+                      height: 200px;
+                      max-width: 300px;
+                      width:300px;
+                      border-radius: 5px 10px 25px 25px;
+                      padding-bottom: 20px;
+                    }
 
-          <!-- Repeat the above card structure for the remaining two cards -->
-          <div class="row">
-            <div class="col-lg-4">
-              <!-- <div class="card" style="align-items: center; justify-content:center"> -->
-              <!-- <div class="card-carousel"> -->
-              <div id="smallCarousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/img3.jpg" alt="Image 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/img2.jpg" alt="Image 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/img1.jpg" alt="Image 3">
-                  </div>
+                    .float-container {
+                      border: 3px solid rgb(255, 255, 255);
+                      background-color: rgba(12, 20, 4, 0.147);
+                      border-radius: 10px;
+                    }
+                  </style>
                 </div>
-                <a class="carousel-control-prev" href="#smallCarousel1" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#smallCarousel1" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
-              <!-- </div> -->
-              <!-- </div> -->
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">Some example text to fill the card body.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some example text to fill the card body.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <!-- <div class="card" style="align-items: center; justify-content:center"> -->
-              <!-- <div class="card-carousel"> -->
-              <div id="smallCarousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/img2.jpg" alt="Image 1">
+          <div class="float-container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div id="smallCarousel1" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block_w-1002" src="assets/images/img3.jpg" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block_w-1002" src="assets/images/img2.jpg" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block_w-1002" src="assets/images/img1.jpg" alt="Image 3">
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/img1.jpg" alt="Image 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/img3.jpg" alt="Image 3">
-                  </div>
+                  <a class="carousel-control-prev" href="#smallCarousel1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#smallCarousel1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
-                <a class="carousel-control-prev" href="#smallCarousel1" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#smallCarousel1" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                <style type="text/css">
+                  .d-block_w-1002 {
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    height: 200px;
+                    width:300px;
+                    max-width: 300px;
+                    padding-bottom: 20px;
+                    border-radius: 5px 10px 25px 25px;
+                  }
+                </style>
               </div>
-              <!-- </div> -->
-              <!-- </div> -->
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some example text to fill the card body.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">Some example text to fill the card body.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+          <div class="float-container">
+            <div class="row">
+              <div class="col-lg-4">
+                <!-- <div class="card" style="align-items: center; justify-content:center"> -->
+                <!-- <div class="card-carousel"> -->
+                <div id="smallCarousel1" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block_w-1003" src="assets/images/img2.jpg" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block_w-1003" src="assets/images/img1.jpg" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block_w-1003" src="assets/images/img3.jpg" alt="Image 3">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#smallCarousel1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#smallCarousel1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <style type="text/css">
+                  .d-block_w-1003 {
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    height: 200px;
+                    width:300px;
+                    max-width: 300px;
+                    padding-bottom: 20px;
+                    border-radius: 5px 10px 25px 25px;
+                  }
+                </style>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some example text to fill the card body.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
             </div>
           </div>
         </div>

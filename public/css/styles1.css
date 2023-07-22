@@ -49,8 +49,9 @@ body {
 }
 
 .carousel-section .container {
-  width: 80%;
+  width: 90%;
   max-width: 100%;
+  justify-content: center;
 }
 
 .carousel-section .row {
@@ -62,7 +63,7 @@ body {
 }
 
 .carousel-section .carousel-inner {
-  width: 100%;
+  width: 90%;
 }
 
 
@@ -73,8 +74,9 @@ body {
 }
 
 .card-section .container {
-  width: 80%;
+  width: 90%;
   max-width: 100%;
+  justify-content: center;
 }
 
 .card-section .card {
